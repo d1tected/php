@@ -1,10 +1,11 @@
 <?php
 
 include('./src/function.php');
+$operatorsForMockTask2 = ['+', '-', '/', '*'];
 
 $mockTask1 = ['Привет', 'Как дела?', 'Мир'];
-$mockTask2 = ['+',10,5];
-$mockTask3 = [5,5];
+$mockTask2 = [$operatorsForMockTask2[array_rand($operatorsForMockTask2)],rand(1,15),rand(1,15)];
+$mockTask3 = [rand(1,10),rand(1,10)];
 
 echo task1($mockTask1);
 echo "<br />\n";
